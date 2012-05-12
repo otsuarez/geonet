@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YOUR EXPERIMENTS | Tabs &amp; Pills</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+    	/* To keep short panes open decently tall */
+    	.tab-pane {min-height: 400px;}
+    </style>
+
+<!-- Modernizr for browser feature-checking 
+			+ HTML5shiv (included in modernizr) see modernizr.com -->
+  	<script src="js/modernizr-2.5.3.min.js"></script>
+
+<!-- Fav and touch icons -->
+		<!-- alternatively, remove these lines and place icons
+				directly in the site parent folder 
+				mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container">
+		      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </a>
+		      <a class="brand" href="index.html">Bootstrap Notes</a>
+		      <div class="nav-collapse">
+		        <ul class="nav">
+		          <li><a href="index.html">Welcome</a></li>
+		          <li><a href="setup-notes.html">Setup Notes</a></li>
+		          <li><a href="navbar-examples.html">Navbar Examples</a></li>
+		          <li><a href="tabs-pills.html">Tabs &amp; Pills</a></li>
+		          <li class="active"><a href="tabs-pills-PLAY.html">Tabs &amp; Pills PLAY</a></li>
+		        </ul>
+		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/"><b class="icon-home icon-white"></b> Twitter Bootstrap Home</a>
+		      </div><!-- /.nav-collapse -->
+		    </div><!-- /.container -->
+		  </div><!-- /navbar-inner -->
+		</div><!-- /navbar -->
+		
+		<div class="container">
+		    <div class="page-header">
+			    <h1>Tabs &amp; Pills PLAYGROUND</h1>
+		    </div>
+		    
+		    		<div class="row">
+							<div class="tabbable span12">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tabs1-pane1" data-toggle="tab">Tab 1</a></li>
+									<li><a href="#tabs1-pane2" data-toggle="tab">Tab 2</a></li>
+									<li><a href="#tabs1-pane3" data-toggle="tab">Tab 3</a></li>
+									<li><a href="#tabs1-pane4" data-toggle="tab">Tab 4</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tabs1-pane1">
+										<h4>Pane 1 Content</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas. Duis congue viverra arcu, ac aliquet turpis rutrum a.</p>
+									</div>
+									<div class="tab-pane" id="tabs1-pane2">
+										<h4>Pane 2 Content</h4>
+										<p>Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas. Duis congue viverra arcu, ac aliquet turpis rutrum a. Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis.</p>
+									</div>
+									<div class="tab-pane" id="tabs1-pane3">
+										<h4>Pane 3 Content</h4>
+										<p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+									</div>
+									<div class="tab-pane" id="tabs1-pane4">
+										<h4>Pane 4 Content</h4>
+										<p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+
+      <hr>
+
+      <footer>
+        <p>By David Cochran of <a href="http://okwu.edu">Oklahoma Wesleyan University</a> and <a href="http://alittlecode.com/">aLittleCode.com</a> for <a href="http://webdesign.tutsplus.com/">webdesign.tutsplus.com</a>. Free for your use! (No warranties, no guarantees.)</p>
+      </footer>
+
+
+    </div> <!-- .container -->
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS: compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!-- Example plugin: Prettify -->
+    <script src="js/prettify/prettify.js"></script>
+    
+<!-- Initialize Scripts -->
+		<script>
+			// Activate Google Prettify in this page
+			addEventListener('load', prettyPrint, false);
+		
+			$(document).ready(function(){
+
+				// Add prettyprint class to pre elements
+					$('pre').addClass('prettyprint');
+								
+			}); // end document.ready
+		</script>
+
+  </body>
+</html>
