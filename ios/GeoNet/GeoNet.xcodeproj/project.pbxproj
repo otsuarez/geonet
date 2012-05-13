@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B2BBC07155FB085004239DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2BBC06155FB085004239DC /* UIKit.framework */; };
+		5B2BBC09155FB085004239DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2BBC08155FB085004239DC /* Foundation.framework */; };
+		5B2BBC0B155FB085004239DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2BBC0A155FB085004239DC /* CoreGraphics.framework */; };
+		5B2BBC11155FB086004239DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BBC0F155FB086004239DC /* InfoPlist.strings */; };
+		5B2BBC13155FB086004239DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2BBC12155FB086004239DC /* main.m */; };
+		5B2BBC17155FB086004239DC /* GNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2BBC16155FB086004239DC /* GNAppDelegate.m */; };
+		5B2BBC1A155FB086004239DC /* GNMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2BBC19155FB086004239DC /* GNMasterViewController.m */; };
+		5B2BBC1D155FB086004239DC /* GNDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2BBC1C155FB086004239DC /* GNDetailViewController.m */; };
+		5B2BBC20155FB086004239DC /* GNMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BBC1E155FB086004239DC /* GNMasterViewController_iPhone.xib */; };
+		5B2BBC23155FB086004239DC /* GNMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BBC21155FB086004239DC /* GNMasterViewController_iPad.xib */; };
+		5B2BBC26155FB086004239DC /* GNDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BBC24155FB086004239DC /* GNDetailViewController_iPhone.xib */; };
+		5B2BBC29155FB086004239DC /* GNDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2BBC27155FB086004239DC /* GNDetailViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B2BBC02155FB085004239DC /* GeoNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2BBC06155FB085004239DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B2BBC08155FB085004239DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B2BBC0A155FB085004239DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B2BBC0E155FB086004239DC /* GeoNet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoNet-Info.plist"; sourceTree = "<group>"; };
+		5B2BBC10155FB086004239DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B2BBC12155FB086004239DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B2BBC14155FB086004239DC /* GeoNet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoNet-Prefix.pch"; sourceTree = "<group>"; };
+		5B2BBC15155FB086004239DC /* GNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNAppDelegate.h; sourceTree = "<group>"; };
+		5B2BBC16155FB086004239DC /* GNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAppDelegate.m; sourceTree = "<group>"; };
+		5B2BBC18155FB086004239DC /* GNMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNMasterViewController.h; sourceTree = "<group>"; };
+		5B2BBC19155FB086004239DC /* GNMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNMasterViewController.m; sourceTree = "<group>"; };
+		5B2BBC1B155FB086004239DC /* GNDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNDetailViewController.h; sourceTree = "<group>"; };
+		5B2BBC1C155FB086004239DC /* GNDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNDetailViewController.m; sourceTree = "<group>"; };
+		5B2BBC1F155FB086004239DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		5B2BBC22155FB086004239DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNMasterViewController_iPad.xib; sourceTree = "<group>"; };
+		5B2BBC25155FB086004239DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		5B2BBC28155FB086004239DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GNDetailViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B2BBBFF155FB085004239DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2BBC07155FB085004239DC /* UIKit.framework in Frameworks */,
+				5B2BBC09155FB085004239DC /* Foundation.framework in Frameworks */,
+				5B2BBC0B155FB085004239DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B2BBBF7155FB085004239DC = {
+			isa = PBXGroup;
+			children = (
+				5B2BBC0C155FB086004239DC /* GeoNet */,
+				5B2BBC05155FB085004239DC /* Frameworks */,
+				5B2BBC03155FB085004239DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B2BBC03155FB085004239DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B2BBC02155FB085004239DC /* GeoNet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B2BBC05155FB085004239DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B2BBC06155FB085004239DC /* UIKit.framework */,
+				5B2BBC08155FB085004239DC /* Foundation.framework */,
+				5B2BBC0A155FB085004239DC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B2BBC0C155FB086004239DC /* GeoNet */ = {
+			isa = PBXGroup;
+			children = (
+				5B2BBC15155FB086004239DC /* GNAppDelegate.h */,
+				5B2BBC16155FB086004239DC /* GNAppDelegate.m */,
+				5B2BBC18155FB086004239DC /* GNMasterViewController.h */,
+				5B2BBC19155FB086004239DC /* GNMasterViewController.m */,
+				5B2BBC1B155FB086004239DC /* GNDetailViewController.h */,
+				5B2BBC1C155FB086004239DC /* GNDetailViewController.m */,
+				5B2BBC1E155FB086004239DC /* GNMasterViewController_iPhone.xib */,
+				5B2BBC21155FB086004239DC /* GNMasterViewController_iPad.xib */,
+				5B2BBC24155FB086004239DC /* GNDetailViewController_iPhone.xib */,
+				5B2BBC27155FB086004239DC /* GNDetailViewController_iPad.xib */,
+				5B2BBC0D155FB086004239DC /* Supporting Files */,
+			);
+			path = GeoNet;
+			sourceTree = "<group>";
+		};
+		5B2BBC0D155FB086004239DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B2BBC0E155FB086004239DC /* GeoNet-Info.plist */,
+				5B2BBC0F155FB086004239DC /* InfoPlist.strings */,
+				5B2BBC12155FB086004239DC /* main.m */,
+				5B2BBC14155FB086004239DC /* GeoNet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B2BBC01155FB085004239DC /* GeoNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2BBC2C155FB086004239DC /* Build configuration list for PBXNativeTarget "GeoNet" */;
+			buildPhases = (
+				5B2BBBFE155FB085004239DC /* Sources */,
+				5B2BBBFF155FB085004239DC /* Frameworks */,
+				5B2BBC00155FB085004239DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoNet;
+			productName = GeoNet;
+			productReference = 5B2BBC02155FB085004239DC /* GeoNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B2BBBF9155FB085004239DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5B2BBBFC155FB085004239DC /* Build configuration list for PBXProject "GeoNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B2BBBF7155FB085004239DC;
+			productRefGroup = 5B2BBC03155FB085004239DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B2BBC01155FB085004239DC /* GeoNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B2BBC00155FB085004239DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2BBC11155FB086004239DC /* InfoPlist.strings in Resources */,
+				5B2BBC20155FB086004239DC /* GNMasterViewController_iPhone.xib in Resources */,
+				5B2BBC23155FB086004239DC /* GNMasterViewController_iPad.xib in Resources */,
+				5B2BBC26155FB086004239DC /* GNDetailViewController_iPhone.xib in Resources */,
+				5B2BBC29155FB086004239DC /* GNDetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B2BBBFE155FB085004239DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2BBC13155FB086004239DC /* main.m in Sources */,
+				5B2BBC17155FB086004239DC /* GNAppDelegate.m in Sources */,
+				5B2BBC1A155FB086004239DC /* GNMasterViewController.m in Sources */,
+				5B2BBC1D155FB086004239DC /* GNDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B2BBC0F155FB086004239DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2BBC10155FB086004239DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B2BBC1E155FB086004239DC /* GNMasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2BBC1F155FB086004239DC /* en */,
+			);
+			name = GNMasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5B2BBC21155FB086004239DC /* GNMasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2BBC22155FB086004239DC /* en */,
+			);
+			name = GNMasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		5B2BBC24155FB086004239DC /* GNDetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2BBC25155FB086004239DC /* en */,
+			);
+			name = GNDetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5B2BBC27155FB086004239DC /* GNDetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2BBC28155FB086004239DC /* en */,
+			);
+			name = GNDetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B2BBC2A155FB086004239DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B2BBC2B155FB086004239DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B2BBC2D155FB086004239DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoNet/GeoNet-Prefix.pch";
+				INFOPLIST_FILE = "GeoNet/GeoNet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B2BBC2E155FB086004239DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoNet/GeoNet-Prefix.pch";
+				INFOPLIST_FILE = "GeoNet/GeoNet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B2BBBFC155FB085004239DC /* Build configuration list for PBXProject "GeoNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2BBC2A155FB086004239DC /* Debug */,
+				5B2BBC2B155FB086004239DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2BBC2C155FB086004239DC /* Build configuration list for PBXNativeTarget "GeoNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2BBC2D155FB086004239DC /* Debug */,
+				5B2BBC2E155FB086004239DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B2BBBF9155FB085004239DC /* Project object */;
+}
