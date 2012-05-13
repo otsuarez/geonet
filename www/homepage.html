@@ -73,13 +73,14 @@ window.setInterval(function(){
 			url: 'http://192.168.0.150/api/updates',
 			data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+'}'},
 			success: function(data) {
-				console.log(data);
+				// console.log(data);
+
 				var obj  = $.parseJSON(data);
-				
+				console.log(obj[0].lat);
 	var el = $('.comment').html();
 				var html = '<div class="well comment" style="font-size:15px;"><ul class="thumbnails"><li class="span3" style="width:48px;height:48px"><a href="#" class="thumbnail"><img src="http://placehold.it/48x48" /></a></li><span style="position:relative;top:15px;">&nbsp; Roberto: <strong>que tal muchachas</strong></span></ul></div>';
 				addComment('<div class="well comment" style="font-size:15px;">'+el+'</div>');
-		console.writeln(html);
+		//console.writeln(html);
 		$('#separador').prepend(html);
 				
 			}
