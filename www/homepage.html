@@ -49,7 +49,12 @@
   			$.ajax({
   				type: 'POST',
   				url: 'http://192.168.0.150/api/updates',
-  				data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+'}'}
+  				data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+'}'},
+  				success: function(data) {
+  					console.log(data);
+  					var obj  = $.parseJSON(data);
+  					console.log(data);
+  				}
 			});
 		}, 5000);
 	}
