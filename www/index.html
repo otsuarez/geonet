@@ -100,6 +100,9 @@
 		  url: 'http://192.168.0.150/api/login',
 		  data: {q: '{"username":"'+$('#email').val()+'"}'},
 		  success: function(data){
+		  	if (data == "OK") {
+		  		window.location = 'homepage.html';
+		  	}
 		  	alert(data);
 		  	console.log('hola');
 		  }
