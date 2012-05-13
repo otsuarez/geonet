@@ -92,8 +92,7 @@ function addComment()
     					$.ajax({
 		  					type: 'POST',
 		  					url: 'http://192.168.0.150/api/post',
-		  					data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+',"text":"'+$('#textarea').val()+'"}'},
-		  					data-type: 'jsonp'
+		  					data: {lat:pGG.coords.latitude, lon:pGG.coords.longitude, text:$('#textarea').val()}
 						});
 					});
 					addComment();
