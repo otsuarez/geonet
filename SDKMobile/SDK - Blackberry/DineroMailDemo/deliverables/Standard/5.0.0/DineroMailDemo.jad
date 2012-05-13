@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: DineroMailDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_browser_field2_api,net_rim_xml_org
+MIDlet-Jar-Size: 77434
+MIDlet-1: ,icon.png,
+RIM-COD-Creation-Time: 1314809526
+MIDlet-Jar-URL: DineroMailDemo.jar
+RIM-COD-URL: DineroMailDemo.cod
+RIM-COD-SHA1: 25 aa 8e 4f ac bc 45 ad 1b 53 c1 b4 a2 e6 da 65 74 a4 13 14
+RIM-COD-Size: 30344
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
+MIDlet-Name: DineroMailDemo
+MIDlet-Vendor: BlackBerry Developer
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 1

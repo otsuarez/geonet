@@ -60,6 +60,21 @@
 	  		type: 'POST',
 	  		url: 'http://192.168.0.150/api/updates',
 	  		data: {q: '{"lat":'+position.coords.latitude+',"lon":'+position.coords.longitude+''},
+	  		success: function (data) {
+	  			function getUrlVars() {
+				    var vars = {};
+				    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				        vars[key] = value;
+				    });
+				    return vars;
+				}
+				
+				var vars = getUrlVars();
+				
+				var obj  = $.parseJSON(data);
+				
+				
+	  		}
 		});
 	}
 	
@@ -78,11 +93,16 @@
 	}
 	
 	
-	$('#goo').click(function() {
+	$('#goo').click(function(event) {
+		event.preventDefault();
 		$.ajax({
 		  type: 'POST',
 		  url: 'http://192.168.0.150/api/login',
-		  data: {q: '{"username":"'+$('#email').val()+'"}'}
+		  data: {q: '{"username":"'+$('#email').val()+'"}'},
+		  success: function(data){
+		  	alert(data);
+		  	console.log('hola');
+		  }
 		});
 	});
 	

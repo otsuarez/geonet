@@ -49,10 +49,7 @@
   			$.ajax({
   				type: 'POST',
   				url: 'http://192.168.0.150/api/updates',
-  				data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+'}'},
-  				success: function () {
-  					alert('hola');
-  				}
+  				data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+'}'}
 			});
 		}, 5000);
 	}
@@ -69,8 +66,7 @@ function addComment()
 {
 	var el = $('.comment').html();
 	console.log(el);
-	var er = $('#separador').prepend('<div class="well comment" style="font-size:15px">'+el+'</div>');
-	
+	var er = $('#separador').prepend('<div class="well comment" style="font-size:15px;">'+el+'</div>');
 }
 
 </script>
@@ -84,19 +80,10 @@ function addComment()
   	</ul>
   	<div class="tab-content">
     	<div class="tab-pane active" id="tab1">
+    	<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+    	<a class="btn btn-primary" href="#" id="post">Postear</a>
     		<div id="separador">
-    			<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-    			<button class="btn btn-primary" id="post">Postear</button>
-    			<script>
-    				$('#post').click(function () {
-    					$.ajax({
-		  					type: 'POST',
-		  					url: 'http://192.168.0.150/api/post',
-		  					data: {lat:pGG.coords.latitude, lon:pGG.coords.longitude, text:$('#textarea').val()}
-						});
-					});
-					addComment();
-    			</script>
+    			
         		<div class="well comment" style="font-size:15px">
         			<ul class="thumbnails">
   						<li class="span3" style="width:48px;height:48px">
@@ -202,6 +189,18 @@ function addComment()
 			  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			  pGG = position;
 			  console.log(position.coords.latitude, position.coords.longitude);
+			  
+			  $('#post').click(function () {
+					console.log('agregar');
+					$.ajax({
+	  					type: 'POST',
+	  					url: 'http://192.168.0.150/api/post',
+	  					data: {lat:pGG.coords.latitude, lon:pGG.coords.longitude, text:$('#textarea').val()}
+					});
+					addComment();
+				});
+				console.log('agregar');
+			  
 			  	/*
 $.ajax({
 			  		type: 'POST',
