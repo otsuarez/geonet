@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>netSocial- talk</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+    	/* To keep short panes open decently tall */
+    	.tab-pane {min-height: 00px;}
+    </style>
+
+<!-- Modernizr for browser feature-checking 
+			+ HTML5shiv (included in modernizr) see modernizr.com -->
+  	<script src="js/modernizr-2.5.3.min.js"></script>
+
+<!-- Fav and touch icons -->
+		<!-- alternatively, remove these lines and place icons
+				directly in the site parent folder 
+				mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    
+  </head>
+
+<body>
+
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+	<li class="active"><a href="#tab1" data-toggle="tab">Talk</a></li>
+    <li><a href="#tab2" data-toggle="tab">Interés comercial</a></li>
+    <li><a href="#tab3" data-toggle="tab">Configuración</a></li>
+  	</ul>
+  	<div class="tab-content">
+    	<div class="tab-pane active" id="tab1">                
+                <div id="separador"> 
+        			<div class="well" style="font-size:15px">
+        				<ul class="thumbnails">
+  							<li class="span3" style="width:48px;height:48px">
+    							<a href="#" class="thumbnail">
+      								<img src="http://placehold.it/48x48" />
+    							</a>
+  							</li>
+                            <script type="text/javascript">
+								var currentTime = new Date();
+								var hh = currentTime.getHours();
+								var ss = currentTime.getMinutes();
+								var mm = currentTime.getSeconds();
+								document.write("<span class='pull-right'>"+hh + ":" + ss + ":" + mm+"</span>");
+							</script>
+						<span style="position:relative;top:15px;">&nbsp; Roberto: <strong>que tal muchachas</strong></span>		
+						</ul>
+        			</div>
+        		</div>
+        </div>
+        
+    	<div class="tab-pane" id="tab2">
+        nada
+   		</div>
+        
+        <div class="tab-pane" id="tab3">      
+      
+   		</div>
+  	</div>
+</div>
+
+</body>
+<footer>
+<br>
+        <!--
+        <p>geoSocial plataform <a href="http://okwu.edu">Oklahoma Wesleyan University</a> and <a href="http://alittlecode.com/">aLittleCode.com</a> for <a href="http://webdesign.tutsplus.com/">webdesign.tutsplus.com</a>. Free for your use! (No warranties, no guarantees.)</p>
+      </footer>
+
+    </div> <!-- /container
+    -->
+    
+    
+    
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS: compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!-- Example plugin: Prettify -->
+    <script src="js/prettify/prettify.js"></script>
+    
+<!-- Initialize Scripts -->
+		<script>
+			// Activate Google Prettify in this page
+			addEventListener('load', prettyPrint, false);
+		
+			$(document).ready(function(){
+
+				// Add prettyprint class to pre elements
+					$('pre').addClass('prettyprint');
+
+				// Initialize tabs and pills
+					$('.note-tabs').tab();
+								
+			}); // end document.ready
+		</script>
+
+  </body>
+</html>
