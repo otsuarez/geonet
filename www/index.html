@@ -150,6 +150,9 @@ function success(position) {
   document.querySelector('article').appendChild(mapcanvas);
   
   var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  alert(latLng);
+  alert(position.coords.latitude);
+  alert(position.coords.longitude);
   var myOptions = {
     zoom: 15,
     center: latlng,
@@ -183,7 +186,7 @@ if (navigator.geolocation) {
 </script>
 </section>
 <!-- <script src="js/prettify.packed.js"></script> -->
-<!-- <script>
+<script>
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -191,7 +194,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 try {
 var pageTracker = _gat._getTracker("UA-1656750-18");
 pageTracker._trackPageview();
-} catch(err) {}</script> -->
+} catch(err) {}</script>
 
 
 
