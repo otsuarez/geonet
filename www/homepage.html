@@ -56,7 +56,7 @@
 
 <div id="banner" style="background-color:#596090; border: 1px; border-color:#424242; border-style:solid">
 <img src="img/banner.png" width="360" height="118"></div><br>
-<script>
+<script charset='utf-8'>
 
 function addComment(html)
 {
@@ -76,7 +76,9 @@ window.setInterval(function(){
 				// console.log(data);
 
 				var obj  = $.parseJSON(data);
-				console.log(obj[0].lat);
+        text = data;
+        // var result = text.substr(0,this.id.length - 1);
+				console.log(obj[0]['lat']);
 	var el = $('.comment').html();
 				var html = '<div class="well comment" style="font-size:15px;"><ul class="thumbnails"><li class="span3" style="width:48px;height:48px"><a href="#" class="thumbnail"><img src="http://placehold.it/48x48" /></a></li><span style="position:relative;top:15px;">&nbsp; Roberto: <strong>que tal muchachas</strong></span></ul></div>';
 				addComment('<div class="well comment" style="font-size:15px;">'+el+'</div>');
