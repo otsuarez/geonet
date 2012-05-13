@@ -46,7 +46,7 @@
 				<label class="checkbox" style="color:#FFFFFF;">
 				    <input type="checkbox"> Remember me
 				</label>
-				<button type="submit" class="btn btn-primary" style="">Sign in</button>
+				<a id="goo" href="homepage.html" class="btn btn-primary" style="">Sign in</a>
 			</form>
           </div><!--/.nav-collapse -->
         </div>
@@ -78,7 +78,7 @@
 	}
 	
 	
-	$('login').submit(function() {
+	$('#goo').click(function() {
 		$.ajax({
 		  type: 'POST',
 		  url: 'http://192.168.0.150/api/login',
