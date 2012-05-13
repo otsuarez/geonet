@@ -84,7 +84,19 @@ function addComment()
   	</ul>
   	<div class="tab-content">
     	<div class="tab-pane active" id="tab1">
-    		<div id="separador"> 
+    		<div id="separador">
+    			<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+    			<button class="btn btn-primary" id="post">Postear</button>
+    			<script>
+    				$('#post').click(function () {
+    					$.ajax({
+		  					type: 'POST',
+		  					url: 'http://192.168.0.150/api/post',
+		  					data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+',"text":"'+$('#textarea').val()+'"'},
+						});
+					});
+					addComment();
+    			</script>
         		<div class="well comment" style="font-size:15px">
         			<ul class="thumbnails">
   						<li class="span3" style="width:48px;height:48px">
@@ -167,10 +179,6 @@ function addComment()
 			      <p>Finding your location: <span id="status">checking...</span></p>
 			    </article>
 			<script>
-			
-			function initialize() {
-				
-			}
 			
 			
 			function success(position) {
