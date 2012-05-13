@@ -34,7 +34,8 @@ string a = "";
 
 void hashFromLatLong(LLD lat, LLD lon, LLD latRange, LLD lonRange, LLD latInit, LLD lonInit, LLD latInc, LLD lonInc)
 {
-	int n = 0, p = 0, t;
+//	printf("%0.12Lf %0.12Lf %0.12Lf %0.12Lf %0.12Lf %0.12Lf %0.12Lf %0.12Lf\n", lat, lon, latRange, lonRange, latInit, lonInit, latInc, lonInc);
+	int p = 0, t;
 	for (LLD i = latInit; i < latRange; i+=latInc , p++)
 	{
 		int q = 0;
@@ -43,11 +44,12 @@ void hashFromLatLong(LLD lat, LLD lon, LLD latRange, LLD lonRange, LLD latInit, 
 			if (lon > j && lon < j + lonInc &&
 				lat > i && lat < i + latInc)
 			{
+				cout << p << " " << q << endl;
 				t = p*4+q;
+//				cout << t << endl;
 				a += hexFromInt(t);
 				hashFromLatLong(lat, lon, i+latInc, j+lonInc, i, j, latInc / 4, lonInc / 4);
 			}
-			n++;
 		}
 	}
 }
