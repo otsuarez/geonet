@@ -56,5 +56,5 @@ void hashFromLatLong(LLD lat, LLD lon, LLD latRange, LLD lonRange, LLD latInit, 
 int main()
 {
 	hashFromLatLong(33.3234234+90, 75.342432432+180, 180.0, 360.0, 0, 0, 180.0/4, 360.0/4);
-	cout << a << " " <<a.size();
+	cout << a.substr(0, 14);
 }

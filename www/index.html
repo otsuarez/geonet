@@ -23,6 +23,32 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
+
+	<script>
+	
+	var pGG;
+	
+	function triggerCount() {
+/* 		clearTimeout(); */
+
+		window.setInterval(function(){
+/* 			alert('a'); */
+			console.log('a');
+  			/// call your function here
+  			$.ajax({
+  				type: 'POST',
+  				url: 'http://192.168.0.150/api/updates',
+  				data: {q: '{"lat":'+pGG.coords.latitude+',"lon":'+pGG.coords.longitude+''},
+  				success: function () {
+  					alert('hola');
+  				}
+			});
+		}, 5000);
+	}
+	
+	</script>
+
+
   <body>
 
     <div class="navbar navbar-fixed-top">
@@ -150,9 +176,14 @@ function success(position) {
   document.querySelector('article').appendChild(mapcanvas);
   
   var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  alert(latLng);
-  alert(position.coords.latitude);
-  alert(position.coords.longitude);
+  pGG = position;
+  console.log(position.coords.latitude, position.coords.longitude);
+  	$.ajax({
+  		type: 'POST',
+  		url: 'http://192.168.0.150/api/updates',
+  		data: {q: '{"lat":'+position.coords.latitude+',"lon":'+position.coords.longitude+''},
+	});
+	
   var myOptions = {
     zoom: 15,
     center: latlng,
@@ -183,10 +214,11 @@ if (navigator.geolocation) {
   error('not supported');
 }
 
+	triggerCount();
 </script>
 </section>
 <!-- <script src="js/prettify.packed.js"></script> -->
-<script>
+<!-- <script>
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -194,7 +226,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 try {
 var pageTracker = _gat._getTracker("UA-1656750-18");
 pageTracker._trackPageview();
-} catch(err) {}</script>
+} catch(err) {}</script> -->
 
 
 
