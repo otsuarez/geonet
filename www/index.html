@@ -24,6 +24,10 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
   <body>
 
     <div class="navbar navbar-fixed-top">
@@ -36,9 +40,9 @@
           </a>
           <a class="brand" href="index.html">GeoNet</a>
           <div class="nav-collapse">
-          	<form class="form-inline pull-right" style="position:relative;top:6px;" method="post" action="homepage.html">
-				<input type="text" class="input" placeholder="Email">
-				<input type="password" class="input" placeholder="Password">
+          	<form id="login" class="form-inline pull-right" style="position:relative;top:6px;" method="post" action="homepage.html">
+				<input type="text" class="input" placeholder="Email" id="email">
+				<input type="password" class="input" placeholder="Password" id="pass">
 				<label class="checkbox" style="color:#FFFFFF;">
 				    <input type="checkbox"> Remember me
 				</label>
@@ -48,6 +52,41 @@
         </div>
       </div>
     </div>
+
+	<script >
+/* 	var position; */
+	function success(position) {
+		$.ajax({
+	  		type: 'POST',
+	  		url: 'http://192.168.0.150/api/updates',
+	  		data: {q: '{"lat":'+position.coords.latitude+',"lon":'+position.coords.longitude+''},
+		});
+	}
+	
+	function error(msg) {
+/* 	  var s = document.querySelector('#status'); */
+/* 	  s.innerHTML = typeof msg == 'string' ? msg : "failed"; */
+/* 	  s.className = 'fail'; */
+	  
+	  // console.log(arguments);
+	}
+	
+	if (navigator.geolocation) {
+	  navigator.geolocation.getCurrentPosition(success, error);
+	} else {
+	  error('not supported');
+	}
+	
+	
+	$('login').submit(function() {
+		$.ajax({
+		  type: 'POST',
+		  url: 'http://192.168.0.150/api/login',
+		  data: {q: '{"username":"'+$('#email').val()+'"}'}
+		});
+	});
+	
+	</script>
 
     <div class="container">
 

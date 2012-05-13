@@ -194,11 +194,13 @@ function addComment()
 			  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			  pGG = position;
 			  console.log(position.coords.latitude, position.coords.longitude);
-			  	$.ajax({
+			  	/*
+$.ajax({
 			  		type: 'POST',
 			  		url: 'http://192.168.0.150/api/updates',
 			  		data: {q: '{"lat":'+position.coords.latitude+',"lon":'+position.coords.longitude+''},
 				});
+*/
 				
 			  var myOptions = {
 			    zoom: 15,
@@ -231,7 +233,7 @@ function addComment()
 			  error('not supported');
 			}
 			
-/* 				triggerCount(); */   /* Triggerrnkfnaknsfklsnfkldnsklfdbnklsbfdk  */
+ 			triggerCount();    /* Triggerrnkfnaknsfklsnfkldnsklfdbnklsbfdk  */
 
 
 			
