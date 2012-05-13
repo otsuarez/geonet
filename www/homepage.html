@@ -53,7 +53,6 @@
   				success: function(data) {
   					console.log(data);
   					var obj  = $.parseJSON(data);
-  					console.log(data);
   					
   					var html = "<div class='well comment' style='font-size:15px'>
         			<ul class='thumbnails'>
@@ -62,16 +61,9 @@
       							<img src='http://placehold.it/48x48' />
     						</a>
   						</li>
-                        <script type='text/javascript'>
-							var currentTime = new Date();
-							var hh = currentTime.getHours();
-							var ss = currentTime.getMinutes();
-							var mm = currentTime.getSeconds();
-							document.write('<span class='pull-right'>'+hh + ':' + ss + ':' + mm+'</span>');
-						</script>
 						<span style='position:relative;top:15px;'>&nbsp; Roberto: <strong>que tal muchachas</strong></span>		
 					</ul>
-        		</div>";
+        		</div>";;;
         		console.writeln(html);
         		$('#separador').prepend(html);
   					
