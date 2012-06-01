@@ -34,7 +34,7 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv 
 ```
 
-levantando el backend
+El backend escucha a traves de un server nginx (el archivo de configuracion disponible en nginx/geonet.conf) que utiliza como backend el script de python corriendo standalone.
 
 ```
 cd /var/www/html/hackaday/api
@@ -44,3 +44,4 @@ pip install flup
 pip install -U bottle 
 python geonet.py
 ```
+
